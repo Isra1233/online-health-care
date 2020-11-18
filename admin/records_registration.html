@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records of Registered People</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_registration.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDL_cZi58wmDybSPwk0FFchst5b_wHDr7s",
+    authDomain: "health-chatbot-b4a9f.firebaseapp.com",
+    databaseURL: "https://health-chatbot-b4a9f.firebaseio.com",
+    projectId: "health-chatbot-b4a9f",
+    storageBucket: "health-chatbot-b4a9f.appspot.com",
+    messagingSenderId: "973197602529",
+    appId: "1:973197602529:web:ef8b2416b3a9b81ff551a0",
+    measurementId: "G-0LS7TZPPFJ"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+
+<body>
+    <div class="container -center">
+        <h1>Records of Registered People</h1>
+    </div>
+
+    <div class="container-fluid" id="mytab1">
+        <table class="table table-striped table-bordered text-center mt-5" id="main">
+            <thead>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Full Name</th>
+                    <th>Gender</th>
+                    <th>Date of Birth</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+<script src="js/getRecords_registration.js"></script>
+
+</html>
